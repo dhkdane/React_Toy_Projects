@@ -1,8 +1,7 @@
-import React, { useState } from "react";
 import List from "./list";
 import Todo from "./todo";
 import Navbar from "./navbar";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 export default function TodoList() {
   // Callback function to receive memo data from Memo component

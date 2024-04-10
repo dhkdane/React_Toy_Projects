@@ -1,14 +1,21 @@
-import React from "react";
-
 import { useNavigate } from "react-router-dom";
 
 export default function List() {
   const navigate = useNavigate();
   async function getData() {
     try {
-      //응답 성공
-      const response = await axios.get("http://localhost:5173/");
-      console.log(response);
+      fetch("https://localhost:5000", {
+        method: "GET",
+        headers: {
+          "X-RapidAPI-Key": "your-api-key",
+          "X-RapidAPI-Host": "jokes-by-api-ninjas.p.rapidapi.com",
+        },
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((error) => console.log(error));
     } catch (error) {
       //응답 실패
       console.error(error);
