@@ -1,19 +1,8 @@
-import React from "react";
-
 import { useNavigate } from "react-router-dom";
 
 export default function List() {
   const navigate = useNavigate();
-  async function getData() {
-    try {
-      //응답 성공
-      const response = await axios.get("http://localhost:5173/");
-      console.log(response);
-    } catch (error) {
-      //응답 실패
-      console.error(error);
-    }
-  }
+
   return (
     <div>
       <div className="flex justify-center">
