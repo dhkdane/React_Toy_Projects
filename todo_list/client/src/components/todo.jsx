@@ -39,7 +39,7 @@ export default function Todo() {
   return (
     <div>
       <div className="task-container">
-        <label>Task</label>
+        <label>Task!</label>
         <br />
         <input
           type="text"
