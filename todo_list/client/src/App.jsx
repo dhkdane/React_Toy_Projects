@@ -1,9 +1,11 @@
-import TodoList from "./components/todoList";
+import Todo from "./components/todo";
+import { Home } from "./pages/Home";
 
 function App() {
   return (
     <>
-      <TodoList />
+      <Home />
+      <Todo />
     </>
   );
 }
